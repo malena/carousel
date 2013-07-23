@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+
+}
+
+h2 {
+    font-size: 10px;
+}
+
+img.panel-size {
+}
+
+@media only screen and (max-width: 959px) {
+    img.panel-size {
+        width: 919px; 
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    img.panel-size {
+        width: 796px; 
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    img.panel-size {
+        width: 587px; 
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    img.panel-size {
+        width: 506px; 
+        background-image: none;
+    }
+}
+
+.ct-carousel-container{
+    width: 90%;
+}
+
+.ct-carousel {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: auto auto;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.panels {
+}
+
+ul.panels li {
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.first-panel { 
+    background-image: url(../images/banner-1.jpg); 
+    z-index: 0;
+}
+.second-panel { 
+    background-image: url(../images/banner-2.jpg); 
+    z-index: 0;
+}
+
+.third-panel { 
+    background-image: url(../images/banner-3.jpg);
+    z-index: 0;
+}
+.fourth-panel { 
+    background-image: url(../images/banner-4.jpg); 
+    z-index: 0;
+}
+.thumbnail-container {
+    z-index: 5;
+    overflow: hidden;
+    position: absolute;
+    width: 960px;
+    height: 72px;
+    bottom: 0;
+}
+
+.thumbnail-background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    opacity: 0.2;
+}
+
+ul.thumbnails {
+    overflow: hidden;
+}
+
+ul.thumbnails li {
+    width: 170px;
+    height: 70px;
+    background-image: url(../images/thumb-1.png);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    cursor: arrow;
+    position: relative; 
+    display: inline-block;
+}
+
+ul.thumbnails li.active {
+    background-position: 0 0;
+}
+
+ul.thumbnails li.thumb-1.active {
+    background-image: url(../images/thumb-1-active.png);
+}
+
+ul.thumbnails li.thumb-2.active {
+    background-image: url(../images/thumb-2-active.png);
+}
+
+ul.thumbnails li.thumb-3.active {
+    background-image: url(../images/thumb-3-active.png);
+}
+
+ul.thumbnails li.thumb-4.active {
+    background-image: url(../images/thumb-4-active.png);
+}
+
+ul.thumbnails h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}

@@ -1,2 +1,2 @@
-carousel
-========
+toggle-slide
+============
