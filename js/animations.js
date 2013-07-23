@@ -18,17 +18,3 @@ Animations.prototype._slideLeft = function(panel){
 	});
 }
 
-Animations.prototype._timer = function(){
-	var that = this;
-	var counter = 1;
-	var timer = setInterval(function(){
-			var panel = '.panel-' + counter;
-			that._slideLeft(panel);
-			that._highlightThumb(counter);
-			if(counter == 4 ){
-				clearInterval(timer);
-				that._timer();
-			}
-			counter++;
-	},3000);	
-}
