@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var gallery_length = $('.panels li').length + 1;
-	var gallery_model = new Gallery(); 
+	var gallery_model = 'null'; 
 	var animations = new Animations();
 	var counter = 1;
 
@@ -24,25 +24,23 @@ $(document).ready(function(){
 	});
 
 	function incrementCounter(){
-		if(counter == 5 ){
-			counter = 1;
-		}
-
+		counter = (counter == 5 ? 1 : counter);
+		
+		counter++;
 		var panel = '.panel-' + counter;
 		animations._slideLeft(panel);
 		animations._highlightThumb(counter);
 		console.log(counter);
-		counter++;
 	}
 
-	var timer = setInterval(incrementCounter, 2000);
+	var timer = setInterval(incrementCounter, 5000);
 
 	$('a.stop').on('click', function(){
 		clearInterval(timer);
 	});
 
 	$('a.play').on('click', function(){
-		timer = setInterval(incrementCounter, 2000);
+		timer = setInterval(incrementCounter, 5000);
 	});
 
 
