@@ -24,7 +24,7 @@ $(document).ready(function(){
 	});
 
 	function incrementCounter(){
-		counter = (counter == 5 ? 1 : counter);
+		counter = (counter == 4 ? 0 : counter);
 		
 		counter++;
 		var panel = '.panel-' + counter;
@@ -33,14 +33,14 @@ $(document).ready(function(){
 		console.log(counter);
 	}
 
-	var timer = setInterval(incrementCounter, 5000);
+	var timer = setInterval(incrementCounter, 2000);
 
 	$('a.stop').on('click', function(){
 		clearInterval(timer);
 	});
 
 	$('a.play').on('click', function(){
-		timer = setInterval(incrementCounter, 5000);
+		timer = setInterval(incrementCounter, 2000);
 	});
 
 
